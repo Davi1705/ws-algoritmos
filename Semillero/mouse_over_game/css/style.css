@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(150, 89, 89);
+    color: #fff;
+}
+
+.container {
+    padding: 0px;
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(61, 8, 8);
+    border: 5px dashed rgb(255, 255, 255);
+}
+#player{
+    background-color: rgb(2, 48, 255);
+    border:4px;
+    width: 40px;
+    height: 40px;
+    /*border-radius: 29px;*/
+    position: absolute;
+    transition: all 0.3s;
+}
+.pointer{
+    background-color: rgb(150, 89, 89);
+    height: 50px;
+    margin-top: 30px;
+    border-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}

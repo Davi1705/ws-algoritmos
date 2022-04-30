@@ -7,7 +7,7 @@ table {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #ffffff;
     text-align: left;
     padding: 8px;
 }
@@ -17,4 +17,12 @@ tr:nth-child(even) {
 }
 body {
     background-color: rgb(105, 195, 224);
+}
+.producto{
+    height: 60%;
+    width: 60%;
+}
+.producto:hover {
+    filter: opacity(.5);
+
 }

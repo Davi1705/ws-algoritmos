@@ -1,28 +1,65 @@
-
+*{
+    color: white;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 50%;
     /* margin: auto; */
 }
+.boton{
+    background-color:rgb(88, 68, 68);
+}
+input{
+    background-color:rgb(56, 47, 47);
+}
 
 td, th {
-    border: 1px solid #ffffff;
+    border: 1px solid #3f2e2e;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #422e2e;
 }
 body {
     background-color: rgb(105, 195, 224);
 }
 .producto{
-    height: 60%;
-    width: 60%;
+    height: 300px;
+    width: 380px;
+
 }
 .producto:hover {
     filter: opacity(.5);
 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+};
+.full_cont{
+    margin: 20px;
+
+}
+.cartas{
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    margin: 5px;
+    
+}
+.card-body{
+    background-color:rgb(48, 47, 47);
+}
+.papa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
 }

@@ -54,69 +54,75 @@ Puede usar como guía el proyecto cargado en el repositorio base (ejercicio-prá
       </header>
 
 
-
-    <div class="container">
+<div class="papa">
+    <div class="full_cont">
     <h1>Mi tienda</h1>
     <p>Bienvenido a mi tienda el día de hoy puedes redimir un descuento aleatorio dando click en el botón de abajo</p>
     <div class="boton_descuento">
-        <input type="button" class ="btn_desc" id="btn_descuento" value="redimir descuento"></input>
+        <input type="button" class ="boton" id="btn_descuento" value="redimir descuento"></input>
     </div>
 
     <br>
+    <h2>Productos</h2>
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <form id="form_cant">
-            <h2>Productos</h2>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img class="producto" src="/tienda/img/huevo.jpg">
-                    <div class="card-body">
-                        <h3>Huevos</h3>
-                        <p id="uds_huevo">30 canastas</p>
-                        <label for="cant_huevo">Cantidad de huevos</label><br>
-                        <input type="number" name="cant_huevo" id="cant_huevo" max="30"></input><br>
+        <form id="form_cant">
+            <div class="cartas">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="producto" src="/tienda/img/huevo.jpg">
+                        <div class="card-body">
+                            <h3>Huevos</h3>
+                            <p id="uds_huevo">30 canastas</p>
+                            <label for="cant_huevo">Cantidad de huevos</label><br>
+                            <input type="number" name="cant_huevo" id="cant_huevo" max="30"></input><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="producto" src="/tienda/img/cereal-g284b98fa9_1920.jpg">
+                        <div class="card-body">
+                            <h3>Leche</h3>
+                            <p id="uds_leche">20 unidades</p>    
+                            <label for="cant_leche">Cantidad de leche</label><br>
+                            <input type="number" name="cant_leche" id="cant_leche"  max="20"></input><br>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img class="producto" src="/tienda/img/cereal-g284b98fa9_1920.jpg">
-                    <div class="card-body">
-                        <h3>Leche</h3>
-                        <p id="uds_leche">20 unidades</p>    
-                        <label for="cant_leche">Cantidad de leche</label><br>
-                        <input type="number" name="cant_leche" id="cant_leche"  max="20"></input><br>
+
+            <div class="cartas">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="producto" src="/tienda/img/pan.jpg">
+                        <div class="card-body">
+                            <h3>Pan</h3>
+                            <p id="uds_pan">50 unidades</p>
+                            <label for="cant_pan">Cantidad de pan</label><br>
+                            <input type="number" name="cant_pan" id="cant_pan" max="50"></input><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="producto" src="/tienda/img/frutas.jpg">
+                        <div class="card-body">
+                            <h3>fruta mix</h3>
+                            <p id="uds_fruta">50 unidades</p>
+                            <label for="cant_fruta">Cantidad de fruta</label><br>
+                            <input type="number" name="cant_fruta" id="cant_fruta" max="50"></input><br>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img class="producto" src="/tienda/img/pan.jpg">
-                    <div class="card-body">
-                        <h3>Pan</h3>
-                        <p id="uds_pan">50 unidades</p>
-                        <label for="cant_pan">Cantidad de pan</label><br>
-                        <input type="number" name="cant_pan" id="cant_pan" max="50"></input><br>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img class="producto" src="/tienda/img/frutas.jpg">
-                    <div class="card-body">
-                        <h3>fruta mix</h3>
-                        <p id="uds_fruta">50 unidades</p>
-                        <label for="cant_fruta">Cantidad de fruta</label><br>
-                        <input type="number" name="cant_fruta" id="cant_fruta" max="50"></input><br>
-                    </div>
-                </div>
-            </div>
-            <button class="btn_carrito" id="btn_carrito">agregar al carrito</button>
-            </form>
-        </div>
-    
-        <input type="button" name="btn_eliminar" id="btn_eliminar" value="eliminar"></input>
     </div>
+            <button class="boton" id="btn_carrito">agregar al carrito</button>
+            </form>
+        
+    
+        <input class="boton" type="button" name="btn_eliminar" id="btn_eliminar" value="eliminar"></input>
+    
 
     <div class="carrito">
         <table id="carrito_tabla">
@@ -128,9 +134,10 @@ Puede usar como guía el proyecto cargado en el repositorio base (ejercicio-prá
         </table>
     </div>
     <div class="recibo">
-        <input type="button" class="btn_pago" name="btn_pago" id="btn_pago" value="pagar"></input>
+        <input type="button" class="boton" name="btn_pago" id="btn_pago" value="pagar"></input>
     </div>
     </div>
+</div>
     <script type="text/javascript" src="/tienda/js/main.js"></script>
 </body>
 </html>

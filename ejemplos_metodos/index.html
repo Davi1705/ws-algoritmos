@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ejemplos_metodos/css/style.css"></style>
     <title>Métodos</title>
 </head>
 <body>
@@ -25,13 +26,53 @@
 
     <h3>2. element.getElementsByTagName(name)</h3>
     <ul>
-        <li>oie</li>
-        <li>la</li>
-        <
+        <li>soda</li>
+        <li>jugo</li>
+        <li>agua</li>
     </ul>
-    
+    <button onclick="cambiar()">cambiar</button>
 
 
+    <h3>3, 4 y 5. document.createElement(name), parentNode.appendChild(node) y element.innerHTML </h3>
+    <button onclick="crearelement()">crear elemento</button>
+
+    <h3>5. element.style.left</h3>
+    <div id="styleLeft">
+    <p>El texto se desplaza</p>
+    </div>
+    <button onclick="moverIzq()">Mover izquierda</button>
+    <button onclick="moverDer()">Mover derecha</button>
+
+    <h3>6. element.setAttribute</h3>
+    <a id="txt_link">Ejemplo link</a>
+    <button onclick="set_attribute()">convertir en link</button>
+
+    <h3>7. element.element.getAttribute </h3>
+    <p>cual es el href de <a id="atributo" href="#">este link?</a><p>
+    <button onclick="get_attribute()">es este</button>
+
+    <h3>8. element.addEventListener</h3>
+    <input type="button" value="no hagas click" id="btn8">
+    <p id="txt"></p>
+
+    <h3>9. window.scrollTo </h3>
+    <input type="button" value="ir al inicio" id="btn9">
+
+    <h3>10. setTimeOut</h3>
+    <p>dale click y espera...</p>
+    <button onclick="esperar()">click</button>
+
+    <h3>11. setInterval</h3>
+    <p id="interval">0</p>
+
+    <h3>12. confirm</h3>
+    <p>Confirmar</p>
+    <button onclick="confirm_f()">click</button>
+
+    <h3>13. Arreglos: ForEach()</h3>
+    <p id="sum"></p>
+
+    <br>
     <script src="js/main.js"></script>
 </body>
 </html>

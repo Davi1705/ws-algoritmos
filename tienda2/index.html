@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/tienda2/css/style.css">
+    <title>Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">Mi tienda</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <button id="btn_list" class="btn">Ver lista</button>
+            </li>
+            <li class="nav-item">
+            <button class="btn" id="btn_info-cat" >Ver información</button>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Modificar Inventario
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><button id="btn_reduce-invent" class="btn dropdown-item">Reducir inventario</button></li>
+                <li><button id="btn_increase-invent" class="btn dropdown-item">Aumentar inventario</but></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><button id="btn_delete" class="btn dropdown-item" href="#">Eliminar porducto</button></li>
+            </ul>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input id="prod_search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="btn_search" class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        </div>
+    </div>
+</nav>
+    <div class="cont container-lg text-bg-dark p-3">
+        <img src="/tienda2/img/4058271.jpg" class="img-fluid img-thumbnail mx-auto rounded" alt="">
+        <a href="http://www.freepik.com">Designed by Freepik</a>
+        <h3>Productos</h3>
+        <form id="product_form">
+            <div>
+                <label for="name">
+                    nombre producto
+                </label>
+                <input type="text" id="name" name="prod_name" placeholder="nombre"><br><br>
+            </div>
+            <div>
+                <label for="price">
+                    precio producto
+                </label>
+                <input type="number" id="price" name="prod_price" placeholder="precio"><br><br>
+            </div>
+            <div>
+                <label for="amount">
+                    cantidad producto
+                </label>
+                <input type="number" id="amount" name="prod_amount" placeholder="cantidad en existencia"><br><br>
+            </div> 
+            <div class="form_group-category">
+                <label for="prod_category">
+                    Seleccionar categoría
+                </label><br>
+                <select class="form-category" id="prod_category" name="prod_category">
+                    <option value=""></option>
+                    <option value="drink">Bebida</option>
+                    <option value="food">comida</option>
+                    <option value="cleaning">limpieza</option>
+                    <option value="self-care">cuidado personal</option>
+                    <option value="pharmacy">farmacia</option>
+                </select>
+            </div>
+        </form>
+      <br>
+    
+    
+        <div class="row gx-5">
+            <div class="btn-group" role="group" >
+                <input type="button" class="btn btn-primary" id="btn_add-end" value="agregar al final"><br><br>
+                <input type="button" class="btn btn-primary" id="btn_add-top" value="agregar al inicio">
+            </div>
+        </div>
+    
+    
+    <div class="container-lg" id="info"></div>
+    <div class="container-lg" id="list">
+        <ul class="list-group" id="prod_list"></ul>
+    </div>
+    </div>
+    </div><br>  
+
+    <script type="text/javascript" src="/tienda2/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

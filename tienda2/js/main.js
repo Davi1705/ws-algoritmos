@@ -98,16 +98,25 @@ function prodInfo(){
         
         let totAmount = amoDrink + amoFood + amoClean + amoSelfCare + amoPharmacy;
 
-        let priceTot = 0;
-        let i=0;
-        let prices = [];
-        products1.forEach(product =>{
-            prices[i]=parseInt(product.price)*parseInt(product.amount);
-            i++;
-        })
-        for (let i = 0; i < prices.length; i++) {
-            priceTot += parseInt(prices[i]);    
-        }
+        let prices = products1.map(function(product){
+            return parseInt(product.price)*parseInt(product.amount);
+        });
+        console.log(prices);
+        let priceTot = prices.reduce((acum,price)=>{
+            return acum + price;
+        });
+        console.log(priceTot);
+
+        // let priceTot = 0;
+        // let i=0;
+        // let prices = [];
+        // products1.forEach(product =>{
+        //     prices[i]=parseInt(product.price)*parseInt(product.amount);
+        //     i++;
+        // })
+        // for (let i = 0; i < prices.length; i++) {
+        //     priceTot += parseInt(prices[i]);    
+        // }
         document.getElementById("info").innerHTML = `
         <p>
         En la categoría bebidas hay ${amoDrink} productos<br>

@@ -1,0 +1,59 @@
+
+.navbar{
+    width: 100% !important;
+
+}
+.img_products{
+  width: 290px;
+  height: 290px;
+}
+.card{
+  width: 20rem;
+}
+.fondo{
+    background: url('/ProyectoF/img/products.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.fondo_1{
+    background: url('/ProyectoF/img/almond.jpg');
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+}
+.fondo-2{
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.fondo_2{
+    background-color: rgba(0,0,0,.5);
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+}
+.submenu{
+  position: relative;
+}
+.submenu #cart{
+  display: none;
+}
+.submenu:hover #cart{
+  display: block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background:white;
+  padding: 20px;
+}
+.empty{
+  padding:10px;
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}

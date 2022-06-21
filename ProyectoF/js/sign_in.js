@@ -12,7 +12,7 @@ async function getUsers() {
     users = await afunc.getInfo("Users");
     console.log(users);
 }
-
+let logged = false;
 function register() {
     const inpName = document.getElementById("reg_name").value;
     const inpEmail = document.getElementById("reg_mail").value;
@@ -31,6 +31,7 @@ function register() {
     if (inpConfPassword == inpPassword) {
         afunc.addUser(inpName, inpEmail, inpPassword, inpPhone, users);
         window.location.href = "index.html";
+        logged = true;
     } else {
         alert("La contraseña no coincide");
     }

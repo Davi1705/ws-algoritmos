@@ -25,10 +25,20 @@ function saveUser(user) {
         },
     }).then((response) => response.json());
 }
-
+//changes the properties in the object (changes) of a product by its id
+function changeProd(id, changes) {
+  fetch(url + "products/"+id, {
+    method: "PATCH",
+    body: JSON.stringify(changes),
+    headers: {
+      "Content-type": "application/json",
+    },
+  }).then((response) => response.json());
+}
 
 export const api_functions = {
     addUser,
     getInfo,
     saveUser,
+    changeProd,
 };

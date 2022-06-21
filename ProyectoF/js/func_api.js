@@ -28,7 +28,7 @@ function saveUser(user) {
 //changes the properties in the object (changes) of a product by its id
 function changeProd(id, changes) {
   fetch(url + "products/"+id, {
-    method: "PATCH",
+    method: "PUT",
     body: JSON.stringify(changes),
     headers: {
       "Content-type": "application/json",

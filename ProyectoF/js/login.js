@@ -13,8 +13,9 @@ async function getUsers() {
   console.log(users);
 }
 getUsers();
+let logged=false;
 function login() {
-    let logged=false;
+    logged=false;
     let name = document.getElementById("log_inp_name").value;
     let email = document.getElementById("log_inp_email").value;
     let password = document.getElementById("log_inp_password").value;
@@ -30,8 +31,10 @@ function login() {
     if (logged) {
         window.location.href = "index.html";
         alert(`Hola ${name}`);
+        const fomrSession = document.getElementById('form_session').style.display = 'none';
     } else {
         alert(`Inicio de sesión inválido`);
     }
     }
+    
     

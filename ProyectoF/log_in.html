@@ -68,25 +68,25 @@
     <form class="row g-3">
     <div class="col-md-6">
       <label for="validationServer01" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="validationServer01" required>
+      <input id="log_inp_name" type="text" class="form-control" id="validationServer01" required>
     </div>
     <div class="col-md-6">
       <label for="validationServer02" class="form-label">Correo</label>
-      <input type="text" class="form-control" id="validationServer02" required>
+      <input id="log_inp_email" type="text" class="form-control" id="validationServer02" required>
     </div>
     
     <div class="col-md-6">
       <label for="validationServer03" class="form-label">Contraseña</label>
-      <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+      <input id="log_inp_password" type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
     </div>
     
     <div class="col-12">
-      <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+      <input type="button" id="btn_login" class="btn btn-primary" value="Iniciar sesión" type="submit"></input>
     </div>
   </form>
   </div>
-
-
+  <script src="/ProyectoF/js/login.js" type="module"></script>
+  <script src="/ProyectoF/js/main.js" type="module"></script>
   <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
